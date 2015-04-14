@@ -1,4 +1,4 @@
-FROM java:openjdk-7-jdk
+FROM java:openjdk-7-jre
 
 MAINTAINER Eugene Volchek <evolchek@klika-tech.com>
 
@@ -12,4 +12,4 @@ RUN mkdir -p /var/lib/teamcity \
 	&& chown -R teamcity:teamcity /opt/TeamCity
 USER teamcity
 EXPOSE 8111
-CMD ["/opt/TeamCity/bin/runAll.sh", "start"]
+CMD ["/opt/TeamCity/bin/teamcity-server.sh", "run"]

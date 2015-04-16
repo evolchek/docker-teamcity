@@ -29,7 +29,7 @@ docker run -d --name teamcity --volumes-from teamcity-data \
 
 If you didn't start the Postgres container on the previous step, simply omit the --link argument.
 
-In order to run build jobs you need to start at least one build agent. See (teamcity-agent)[https://registry.hub.docker.com/u/klikatech/teamcity-agent/] image for details.
+In order to run build jobs you need to start at least one build agent. See [teamcity-agent](https://registry.hub.docker.com/u/klikatech/teamcity-agent/) image for details.
 
 ### Staying up to date
 

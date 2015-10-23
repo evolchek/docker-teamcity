@@ -1,8 +1,8 @@
-FROM java:openjdk-7-jre
+FROM java:openjdk-8-jre
 
 MAINTAINER Eugene Volchek <evolchek@klika-tech.com>
 
-ENV TEAMCITY_VERSION 9.1.1
+ENV TEAMCITY_VERSION 9.1.3
 VOLUME ["/var/lib/teamcity"]
 RUN mkdir -p /var/lib/teamcity \
 	&& groupadd -g 999 teamcity \

@@ -7,7 +7,7 @@ It is recommended to use a data container to persist the application data:
 ```
 docker run --name teamcity-data \
   -v /var/lib/teamcity -v /var/lib/postgresql/data \
-  busybox /bin/false
+  busybox chown -R 999: /var/lib/teamcity /var/lib/postgresql/data
 ```
 
 If you're not planning to use an external database, just omit the Postgres volume.

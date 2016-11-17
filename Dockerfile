@@ -2,7 +2,7 @@ FROM java:openjdk-8-jre
 
 MAINTAINER Eugene Volchek <evolchek@klika-tech.com>
 
-ENV TEAMCITY_VERSION 10.0.2
+ENV TEAMCITY_VERSION 10.0.3
 VOLUME ["/var/lib/teamcity"]
 RUN mkdir -p /var/lib/teamcity \
 	&& groupadd -g 999 teamcity \
